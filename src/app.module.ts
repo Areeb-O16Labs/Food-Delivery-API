@@ -23,8 +23,8 @@ import { AuthModule } from './auth/auth.module';
       synchronize: Boolean(process.env.DB_SYNCHRONIZE),
       autoLoadEntities: true,
     }),
-    UsersModule,
     AuthModule,
+    UsersModule,
   ],
 })
 export class AppModule {}
