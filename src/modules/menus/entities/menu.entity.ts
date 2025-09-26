@@ -18,7 +18,7 @@ export class Menus {
     @Column({default: true})
     isActive: boolean
 
-    @ManyToOne(() => Restaurants)
+    @ManyToOne(() => Restaurants, restaurant => restaurant.menus, { onDelete: 'CASCADE' })
     restaurant: Restaurants
 
     @CreateDateColumn()
