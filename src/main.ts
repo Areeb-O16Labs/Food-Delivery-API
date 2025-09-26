@@ -11,7 +11,7 @@ async function bootstrap() {
   app.enableCors();
 
   const option = new DocumentBuilder()
-    .setTitle('ABC API TESTER')
+    .setTitle('Food Delivery Platform')
     .setDescription('List of Apis')
     .setVersion('1.0')
     .addBearerAuth(
