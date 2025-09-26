@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { RestaurantsModule } from './modules/restaurants/restaurants.module';
+import { MenusModule } from './modules/menus/menus.module';
 
 @Module({
   controllers: [AppController],
@@ -27,6 +28,7 @@ import { RestaurantsModule } from './modules/restaurants/restaurants.module';
     AuthModule,
     UsersModule,
     RestaurantsModule,
+    MenusModule,
   ],
 })
 export class AppModule {}

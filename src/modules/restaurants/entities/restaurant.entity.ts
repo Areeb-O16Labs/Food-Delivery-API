@@ -1,4 +1,5 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { Menus } from "src/modules/menus/entities/menu.entity";
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
 export class Restaurants {
@@ -16,6 +17,9 @@ export class Restaurants {
 
     @Column({ type: "float" })
     rating: number;
+
+    @OneToMany(() => Menus, (menu) => menu.restaurant)
+    menus: Menus[]
 
     @CreateDateColumn()
     createdAt: Date;
