@@ -7,6 +7,7 @@ import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { RestaurantsModule } from './modules/restaurants/restaurants.module';
 import { MenusModule } from './modules/menus/menus.module';
+import { OrdersModule } from './modules/orders/orders.module';
 
 @Module({
   controllers: [AppController],
@@ -29,6 +30,7 @@ import { MenusModule } from './modules/menus/menus.module';
     UsersModule,
     RestaurantsModule,
     MenusModule,
+    OrdersModule,
   ],
 })
 export class AppModule {}
